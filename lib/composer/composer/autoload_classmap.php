@@ -698,6 +698,7 @@ return array(
     'OC\\Core\\Migrations\\Version15000Date20181015062942' => $baseDir . '/core/Migrations/Version15000Date20181015062942.php',
     'OC\\Core\\Migrations\\Version15000Date20181029084625' => $baseDir . '/core/Migrations/Version15000Date20181029084625.php',
     'OC\\Core\\Migrations\\Version16000Date20190212081545' => $baseDir . '/core/Migrations/Version16000Date20190212081545.php',
+    'OC\\Core\\Migrations\\Version16000Date20190215125511' => $baseDir . '/core/Migrations/Version16000Date20190215125511.php',
     'OC\\Core\\Service\\LoginFlowV2Service' => $baseDir . '/core/Service/LoginFlowV2Service.php',
     'OC\\DB\\Adapter' => $baseDir . '/lib/private/DB/Adapter.php',
     'OC\\DB\\AdapterMySQL' => $baseDir . '/lib/private/DB/AdapterMySQL.php',
