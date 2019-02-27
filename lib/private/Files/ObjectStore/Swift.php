@@ -76,9 +76,13 @@ class Swift implements IObjectStore {
 	 * @throws \Exception from openstack lib when something goes wrong
 	 */
 	public function writeObject($urn, $stream) {
+		$tmpFile = \OC::$server->getTempManager()->getTemporaryFile('swiftwrite');
+		file_put_contents($tmpFile, $stream);
+		$handle = fopen($tmpFile, 'rb');
+
 		$this->getContainer()->createObject([
 			'name' => $urn,
-			'stream' => stream_for($stream)
+			'stream' => stream_for($handle)
 		]);
 	}
 
